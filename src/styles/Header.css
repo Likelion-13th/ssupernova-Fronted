@@ -7,7 +7,8 @@
     display: flex;
     padding: 20px 30px;
     color: #ffffff;
-    background-color: rgba(196, 196, 196, 0.3);
+    background-color:rgba(0, 0, 0, 0.5); /* 검정색, 50% 투명도 */
+    ;
     justify-content:space-between;
     font-size: 1.4rem;
     font-family: 'KaiseiDecol-Regular';
@@ -29,7 +30,7 @@
 }
 
 .mypage-bg{
-    background-color: #e7eff5;
+    background-color: rgba(75, 147, 235, 0.5);
 }
 
 a {
