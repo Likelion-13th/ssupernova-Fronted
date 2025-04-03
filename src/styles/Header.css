@@ -1,44 +1,60 @@
-@font-face{
-    font-family:'KaiseiDecol-Regular';
-    src:url("../../public/font/KaiseiDecol-Regular.ttf") format("truetype");
-}
-
-.header-container{
+@font-face {
+    font-family: "KaiseiDecol-Regular";
+    src: url("../../public/font/KaiseiDecol-Regular.ttf") format("truetype");
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
-    padding: 20px 30px;
-    color: #ffffff;
-    background-color:rgba(0, 0, 0, 0.5); /* 검정색, 50% 투명도 */
-    ;
-    justify-content:space-between;
-    font-size: 1.4rem;
-    font-family: 'KaiseiDecol-Regular';
-}
-
-.header-subtitle-wrapper{
-    display: flex;
-    font-size: 1.4rem;
-    font-family: 'KaiseiDecol-Regular';
-}
-
-.active{
-    color: #5c5c5c;
-}
-
-.active-home,
-.active-home:hover{
-    color: #ffffff;
-}
-
-.mypage-bg{
-    background-color: rgba(75, 147, 235, 0.5);
-}
-
-a {
-    color: inherit;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px;
+    font-size: 22px;
+    font-family: "KaiseiDecol-Regular";
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.25);
+  }
+  
+  header[data-page="mypage"] {
+    background-color: #e7eff5;
+  }
+  
+  .logo a {
     text-decoration: none;
-    padding: 0% 10px;
-}
-
-a:hover{
-    color: #5c5c5c;
-}
+    color: #ffffff;
+    font-size: 22px;
+  }
+  
+  header[data-page="mypage"] .logo a {
+    color: #3a3a3a;
+  }
+  
+  .nav-menu {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-menu a {
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  header[data-page="mypage"] .nav-menu a {
+    color: #b8bac6;
+  }
+  
+  .nav-menu a:hover,
+  .nav-menu a:focus,
+  .nav-menu a.active {
+    color: #3a3a3a;
+  }
+  
+  header[data-page="mypage"] .nav-menu a:hover,
+  header[data-page="mypage"] .nav-menu a:hover,
+  header[data-page="mypage"] .nav-menu a.active {
+    color: #3a3a3a;
+  }
