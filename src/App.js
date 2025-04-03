@@ -6,9 +6,11 @@ import Mypage from "./pages/Mypage/Mypage";
 import New from "./pages/ProductPage/New";
 import Perfume from "./pages/ProductPage/Perfume";
 import Diffuser from "./pages/ProductPage/Diffuser";
+import Footer from "./components/Footer";
 
 function App() {
   return (
+    
     <Router>
       <Header />
       <Routes>
@@ -17,8 +19,11 @@ function App() {
         <Route path="/new" element={<New />} />
         <Route path="/perfume" element={<Perfume />} />
         <Route path="/diffuser" element={<Diffuser />} />
+      
       </Routes>
+      <Footer/>
     </Router>
+    
   );
 }
 
