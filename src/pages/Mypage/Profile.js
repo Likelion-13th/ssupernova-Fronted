@@ -8,7 +8,7 @@ const Profile=()=>{
     return(
         
         <div className="profile-container"> {/* 빨간색 박스 */}
-            <div class name="profile-section">{/* 노란색 박스 */}
+            <div className="profile-section">{/* 노란색 박스 */}
                 <div className="profile-name">
                     <span className="profile-realName">ssupernova
                     </span>님
